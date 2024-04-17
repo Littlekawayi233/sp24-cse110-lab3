@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>Meeting Minutes Sample</title>
+</head>
+<body>
+    <header>
+        <h1><b>CSE 110 Meeting</b></h1>
+        <h2><b>Brand and Logo design Session</b></h2>
+        <h3><strong>Meeting Date: April 14, 2024</strong></h3>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#attendance">Attendance</a></li>
+            <li><a href="#agenda">Agenda</a></li>
+            <li><a href="#comments">Comments</a></li>
+            <li><a href="#diagrams">Architecture Diagrams</a></li>
+            <li><a href="#form">Participation Form</a></li>
+        </ul>
+    </nav>
+    <hr>
+    <hr>
+    <section id = 'attendance' >
+        <h2>Attendance</h2>
+        <ul>
+            <li><input type="checkbox" /><strong>Team memeber A</strong></li>
+            <li><input type="checkbox" /><i>Team memeber B</i></li>
+            <li><input type="checkbox" /><em>Team memeber C</em></li>
+        </ul>   
+    </section>
+
+    <section id = 'agenda'>
+        <h2>Agenda</h2>
+        <ol>
+            <li><span>Intruduce yourself</span></li>
+            <li>Brainstorming our brand</li>
+            <li>Theme design</li>
+            <li>Color design</li>
+        </ol>
+    </section>
+    
+    <section>
+        <h3>Unfinished Business </h3>
+        <ul>
+            Since this is the <span style ='color: red;' >first time meeting</span>, there's no unfinished business left.
+        </ul>
+    </section>
+
+    <section>
+        <h2>New Business</h2>
+        <ol>
+            <li>Create a brand and logo for our team</li>
+            <li>Vote for the most suitable brand</li>
+            <li>color and theme design</li>
+        </ol>
+    </section>
+
+    <section id = 'comments'>
+        <h2> Comments section</h2>
+        <form>
+        <div>
+            <label for="Comment">Comment section:</label>
+            <input type="text" id="Comment" name="Leave your comment here" placeholder="Leave your comment here">
+        </div>
+        </form>
+      
+    </section>
+    
+
+    <section id = 'diagrams'>
+        <h2>Archiecture diagram</h2>
+        <img src="screenshots/ss.png" alt="Archiecture diagram" width = '250'>
+    
+    </section>
+
+    <section id = 'form'>
+        <h2> Please fill the following form to get your participation point</h2>
+        <form>
+            <fieldset>
+        <div>
+            <label for="yourname">Enter your name:</label>
+            <input type="text" id="yourname" name="Leave your name here" placeholder="Your name">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="Feedback">Feedback:</label>
+            <textarea id="Feedback" name="Feedback" rows="2" cols="10">
+            </textarea>
+            
+        </div>
+
+        <br>
+
+        <div>
+            <label for="color">Choose your favorite color:</label>
+            <input list="colors" id="color" name="color">
+            <datalist id="colors">
+                <option value="Red">
+                <option value="Blue">
+                <option value="Orange">
+                <option value="Black">
+                <option value="White">
+            </datalist>
+            
+        </div>
+
+        <br>
+
+        <div>
+            <label for="brandame">Choose a name for our team:</label>
+            <select id="brandname" name="brandname">
+                <option value="404 not found">404 not found</option>
+                <option value="404">404</option>
+                <option value="team20">team20</option>
+            </select>
+            
+        </div>
+
+         <br>
+
+        <div>
+            <label for="report">Check the box if you like this meeting</label>
+            <input type="checkbox" name="check" id="report">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="radioinput">Record a radio of your summary of this meeting</label>
+            <input type="radio" name="radiocheck" id="radioinput">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="date">Date:</label>
+            <input type="date" name="date" id="date">
+        </div>
+        <button>Submit</button>
+    </fieldset>
+        </form>
+
+        <section>
+        <details>
+            <summary>See Details</summary>
+            <p>This form does not work ^^</p>
+          </details>
+          </section>
+    <section>
+        <h2>Meeting Recordings</h2>
+        <article>
+            <h3>Audio Recording</h3>
+            <audio controls>
+                <source src="viedo/audio.m4a" type="audio/mpeg">
+            </audio>
+        </article>
+        <article>
+            <h3>Video Recording</h3>
+            <video width="auto" height="400px" autoplay="" loop="" muted="">
+                <source src="viedo/video.mp4"  type="video/mp4">
+             <source src="Video.ogg" type="video/ogg">
+          </video>
+        </article>
+    </section>
+    <main>
+       pretended video
+    </main>
+    <footer>
+        <p>Minutes prepared by: Zhaoyu Dou</p>
+        
+    </footer>
+</body>
+</html>
