@@ -74,11 +74,14 @@ footer p {
     margin: auto;
 }
 li:nth-child(2), li:nth-child(2) ~ li {
-    color: hsl(0%,30%,30%);
+    color: hsl(1%,30%,30%);
 }
 div + button {
-    color: color(display-p3 0.233 0.733 0.455);
-    background-color: color-mix(lab, color(display-p3 0.1 0.8 0.6) 50%, color(display-p3 0.8 0.2 0.5) 50%);
+    
+    background-color: #99cc88; 
+    @supports (background-color: color-mix(in lab, red 50%, blue 50%)) {
+        background-color: color-mix(in lab, color(display-p3 0.1 0.8 0.6) 50%, color(display-p3 0.8 0.2 0.5) 50%);
+    }
   }
 section.com:has(#Comment) h2 {
     color: orange;
