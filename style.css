@@ -12,9 +12,7 @@
     max-width: 1200px; 
     min-width: 1000px; 
     position: relative;
-    top: 10px; left: 4px;
-
-    
+    top: 10px; left: 4px; 
 }
 .session-title {
     color: #0056b3; 
@@ -159,6 +157,7 @@ section.com:has(#Comment) h2 {
 
     .grid-container {
         grid-template-columns: repeat(3, 1fr);
+    }
 
     #meeting-title {
         font-size: 26pt;
@@ -170,6 +169,7 @@ section.com:has(#Comment) h2 {
     footer p {
         font-size: 14px;
     }
+
 }
 .example {
     
@@ -183,4 +183,3 @@ section.com:has(#Comment) h2 {
       }
     }
   }
-}
