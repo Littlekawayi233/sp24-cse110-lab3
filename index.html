@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="screenshots/icon.png">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Jacquard+24&display=swap');
+    </style>
     <title>Meeting Minutes Sample</title>
 </head>
 <body>
     <header>
-        <h1><b>CSE 110 Meeting</b></h1>
-        <h2><b>Brand and Logo design Session</b></h2>
+        <h1 id="meeting-title" class ='jacquard-24-regular'><b>CSE 110 Meeting</b></h1>
+        <h2 class="session-title"><b>Brand and Logo design Session</b></h2>
         <h3><strong>Meeting Date: April 14, 2024</strong></h3>
     </header>
     <main>
@@ -28,7 +32,7 @@
     <hr>
     <hr>
     <section id = 'attendance' >
-        <h2>Attendance</h2>
+        <h2 class="session-title">Attendance</h2>
         <ul>
             <li><input type="checkbox" /><strong>Team memeber A</strong></li>
             <li><input type="checkbox" /><i>Team memeber B</i></li>
@@ -37,7 +41,7 @@
     </section>
 
     <section id = 'agenda'>
-        <h2>Agenda</h2>
+        <h2 class="session-title">Agenda</h2>
         <ol>
             <li><span>Intruduce yourself</span></li>
             <li>Brainstorming our brand</li>
@@ -47,14 +51,15 @@
     </section>
     
     <section>
-        <h3>Unfinished Business </h3>
+        <h3 class="session-title">Unfinished Business </h3>
       
             Since this is the <span>first time meeting</span>, there's no unfinished business left.
     
     </section>
 
+
     <section>
-        <h2>New Business</h2>
+        <h2 class="session-title">New Business</h2>
         <ol>
             <li>Create a brand and logo for our team</li>
             <li>Vote for the most suitable brand</li>
@@ -62,7 +67,7 @@
         </ol>
     </section>
 
-    <section id = 'comments'>
+    <section class = 'com' id = 'comments'>
         <h2> Comments section</h2>
         <form>
         <div>
@@ -149,15 +154,32 @@
             <input type="date" name="date" id="date">
         </div>
         <button>Submit</button>
-    
         
+        <div class="container">
+            Proceess ongoing here...
+        </div>
+        <div class="flex-container">
+            <div class="flex-item"><p style="color: blue; ">Meeting summary</p></div>
+            <div class="flex-item">Feedbacks</div>
+            <div class="flex-item">membership info</div>
+        </div>
+        <div class="grid-container">
+            <div class="grid-item">report1</div>
+            <div class="grid-item">report2</div>
+            <div class="grid-item">report3</div>
+            <div class="grid-item">report4</div>
+        </div>
 
+    
         <section>
         <details>
             <summary>See Details</summary>
             <p>This form does not work ^^</p>
           </details>
           </section>
+
+    
+    
     <section>
         <h2>Meeting Recordings</h2>
         <article>
@@ -177,6 +199,11 @@
               </section>
         </article>
     </section>
+
+    <p class="example">
+        Click this<a href="#">link</a>will take you to the top of the page.
+    </p>
+    
 
 
     <footer>
